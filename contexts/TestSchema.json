@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "identifier": "http://schema.org/identifier",
+    "image": {"@id": "http://schema.org/image", "@type": "@id"},
+
+    "StudentIdentityCard": {
+      "@id": "http://172.18.0.1:11111/contexts/student#StudentIdentityCard",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "description": "http://schema.org/description",
+        "name": "http://schema.org/name",
+        "identifier": "http://schema.org/identifier",
+        "image": {"@id": "http://schema.org/image", "@type": "@id"}
+      }
+    },
+
+    "Student": {
+      "@id": "http://172.18.0.1:11111/contexts/student#Student",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "ctzn": "https://w3id.org/citizenship#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "birthCountry": "ctzn:birthCountry",
+        "birthDate": {"@id": "schema:birthDate", "@type": "xsd:dateTime"},
+        "familyName": "schema:familyName",
+        "gender": "schema:gender",
+        "givenName": "schema:givenName",
+        "studentId": "schema:text"
+      }
+    },
+
+    "Person": "http://schema.org/Person"
+  }
+}
