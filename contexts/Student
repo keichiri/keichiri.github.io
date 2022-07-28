@@ -9,7 +9,7 @@
     "image": {"@id": "http://schema.org/image", "@type": "@id"},
 
     "StudentIdentityCard": {
-      "@id": "https://keichiri.github.io/contexts/Student#StudentIdentityCard",
+      "@id": "https://www.pocket.com/contexts/Student#StudentIdentityCard",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -25,7 +25,7 @@
     },
 
     "Student": {
-      "@id": "https://keichiri.github.io/contexts/Student#Student",
+      "@id": "https://www.pocket.com/contexts/Student#Student",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -36,10 +36,13 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "birthCountry": "ctzn:birthCountry",
         "birthDate": {"@id": "schema:birthDate", "@type": "xsd:dateTime"},
-        "familyName": "schema:familyName",
         "gender": "schema:gender",
-        "givenName": "schema:givenName",
-        "studentId": "schema:text"
+        "firstName": "schema:givenName",
+        "lastName": "schema:familyName",
+        "middleInitial": "schema:additionalName",
+        "studentId": "schema:text",
+        "externalId": "schema:text",
+        "attachment": "schema:text"
       }
     },
 
