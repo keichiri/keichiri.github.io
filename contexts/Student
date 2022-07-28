@@ -9,7 +9,7 @@
     "image": {"@id": "http://schema.org/image", "@type": "@id"},
 
     "StudentIdentityCard": {
-      "@id": "https://www.pocket.com/contexts/Student#StudentIdentityCard",
+      "@id": "https://keichiri.github.io/contexts/Student#StudentIdentityCard",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -25,7 +25,7 @@
     },
 
     "Student": {
-      "@id": "https://www.pocket.com/contexts/Student#Student",
+      "@id": "https://keichiri.github.io/contexts/Student#Student",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -41,7 +41,7 @@
         "lastName": "schema:familyName",
         "middleInitial": "schema:additionalName",
         "studentId": "schema:text",
-        "externalId": "schema:text",
+        "externalId": "schema:email",
         "attachment": "schema:text"
       }
     },
