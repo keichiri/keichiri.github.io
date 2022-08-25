@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@version": 0.1,
+    "@protected": true,
+
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "identifier": "http://schema.org/identifier",
+    "image": {"@id": "http://schema.org/image", "@type": "@id"},
+
+    "pocket": "https://keichiri.github.io/context",
+
+    "StudentIdentityCard": {
+      "@id": "https://keichiri.github.io/context#StudentIdentityCard",
+      "@context": {
+        "@version": 0.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "description": "http://schema.org/description",
+        "student": {"@type": "Student"},
+        "image": {"@id": "http://schema.org/image", "@type": "@id"}
+      }
+    },
+
+    "Student": {
+      "@id": "https://keichiri.github.io/context#Student",
+      "@context": {
+        "@version": 0.1,
+        "@protected": true,
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": {
+          "@id": "Person"
+        },
+
+        "studentId": "http://schema.org/identifier",
+        "externalId": "http://schema.org/email",
+        "attachment": "http://schema.org/text",
+        "picture": "http://schema.org/url"
+      }
+    },
+
+    "SkillCredential": {
+      "@id": "https://keichiri.github.io/context#SkillCredential",
+      "@context": {
+        "@version": 0.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "description": "http://schema.org/description",
+        "skill": {"@type": "Skill"},
+        "image": {"@id": "http://schema.org/image", "@type": "@id"}
+      }
+    },
+
+    "Skill": {
+      "@id": "https://keichiri.github.io/context#Skill",
+      "@context": {
+        "@version": 0.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "skillId": "http://schema.org/identifier",
+        "name": "http://schema.org/name"
+      }
+    },
+
+    "BadgeCredential": {
+      "@id": "https://keichiri.github.io/context#BadgeCredential",
+      "@context": {
+        "@version": 0.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+
+        "description": "http://schema.org/description",
+        "badge": {"@type": "Badge"},
+        "image": {"@id": "http://schema.org/image", "@type": "@id"}
+      }
+    },
+
+    "Badge": {
+      "@id": "https://keichiri.github.io/context#Badge",
+      "@context": {
+        "@version": 0.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "badgeId": "schema:identifier",
+        "badgeTypeId": "schema:identifier",
+        "name": "schema:name",
+        "awardDate": "schema:dateCreated"
+      }
+    },
+
+    "Person": "http://schema.org/Person"
+  }
+}
