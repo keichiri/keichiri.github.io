@@ -23,7 +23,6 @@
         "type": "@type",
 
         "description": "http://schema.org/description",
-        "student": {"@type": "Student"},
         "image": {"@id": "http://schema.org/sha256", "@type": "@id"}
       }
     },
@@ -33,10 +32,6 @@
       "@context": {
         "@version": 1.1,
         "@protected": true,
-        "@type": "rdfs:Class",
-        "rdfs:subClassOf": {
-          "@id": "Person"
-        },
 
         "studentId": "http://schema.org/identifier",
         "externalId": "http://schema.org/email",
@@ -54,7 +49,6 @@
         "type": "@type",
 
         "description": "http://schema.org/description",
-        "skill": {"@type": "Skill"},
         "image": {"@id": "http://schema.org/image", "@type": "@id"}
       }
     },
