@@ -83,7 +83,6 @@
         "id": "@id",
         "type": "@type",
         "badgeId": "http://schema.org/identifier",
-        "badgeTypeId": "http://schema.org/identifier",
         "name": "http://schema.org/name",
         "awardDate": "http://schema.org/dateCreated"
       }
