@@ -82,10 +82,10 @@
         "@protected": true,
         "id": "@id",
         "type": "@type",
-        "badgeId": "schema:identifier",
-        "badgeTypeId": "schema:identifier",
-        "name": "schema:name",
-        "awardDate": "schema:dateCreated"
+        "badgeId": "http://schema.org/identifier",
+        "badgeTypeId": "http://schema.org/identifier",
+        "name": "http://schema.org/name",
+        "awardDate": "http://schema.org/dateCreated"
       }
     },
 
