@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@version": 1.0,
+    "@version": 1.1,
     "@protected": true,
 
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -16,7 +16,7 @@
     "StudentIdentityCard": {
       "@id": "https://keichiri.github.io/context#StudentIdentityCard",
       "@context": {
-        "@version": 1.0,
+        "@version": 1.1,
         "@protected": true,
 
         "id": "@id",
@@ -31,7 +31,7 @@
     "Student": {
       "@id": "https://keichiri.github.io/context#Student",
       "@context": {
-        "@version": 1.0,
+        "@version": 1.1,
         "@protected": true,
         "@type": "rdfs:Class",
         "rdfs:subClassOf": {
@@ -47,7 +47,7 @@
     "SkillCredential": {
       "@id": "https://keichiri.github.io/context#SkillCredential",
       "@context": {
-        "@version": 1.0,
+        "@version": 1.1,
         "@protected": true,
 
         "id": "@id",
@@ -62,7 +62,7 @@
     "Skill": {
       "@id": "https://keichiri.github.io/context#Skill",
       "@context": {
-        "@version": 1.0,
+        "@version": 1.1,
         "@protected": true,
         "id": "@id",
         "type": "@type",
@@ -74,7 +74,7 @@
     "BadgeCredential": {
       "@id": "https://keichiri.github.io/context#BadgeCredential",
       "@context": {
-        "@version": 1.0,
+        "@version": 1.1,
         "@protected": true,
         "id": "@id",
         "type": "@type",
@@ -87,7 +87,7 @@
     "Badge": {
       "@id": "https://keichiri.github.io/context#Badge",
       "@context": {
-        "@version": 1.0,
+        "@version": 1.1,
         "@protected": true,
         "id": "@id",
         "type": "@type",
