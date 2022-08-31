@@ -17,6 +17,7 @@
         "@protected": true,
         "id": "@id",
         "type": "@type",
+        "name": "http://schema.org/name",
         "description": "http://schema.org/description",
         "image": {
           "@id": "http://schema.org/image",
