@@ -16,14 +16,22 @@
         "@version": 1.1,
         "@protected": true,
         "id": "@id",
-        "type": "@type"
+        "type": "@type",
+        "description": "http://schema.org/description",
+        "image": {
+          "@id": "http://schema.org/image",
+          "@type": "@id"
+        }
       }
     },
     "Student": {
       "@id": "https://keichiri.github.io/context#Student",
       "@context": {
         "@version": 1.1,
-        "@protected": true
+        "@protected": true,
+        "studentId": "http://schema.org/identifier",
+        "externalId": "http://schema.org/email",
+        "attachment": "http://schema.org/url"
       }
     },
     "SkillCredential": {
