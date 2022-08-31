@@ -2,54 +2,52 @@
   "@context": {
     "@version": 1.1,
     "@protected": true,
-
     "name": "http://schema.org/name",
     "description": "http://schema.org/description",
     "identifier": "http://schema.org/identifier",
-    "image": {"@id": "http://schema.org/image", "@type": "@id"},
-
+    "image": {
+      "@id": "http://schema.org/image",
+      "@type": "@id"
+    },
     "pocket": "https://keichiri.github.io/context",
-
     "StudentIdentityCard": {
       "@id": "https://keichiri.github.io/context#StudentIdentityCard",
       "@context": {
         "@version": 1.1,
         "@protected": true,
-
         "id": "@id",
         "type": "@type",
-
         "description": "http://schema.org/description",
-        "image": {"@id": "http://schema.org/sha256", "@type": "@id"}
+        "image": {
+          "@id": "http://schema.org/sha256",
+          "@type": "@id"
+        }
       }
     },
-
     "Student": {
       "@id": "https://keichiri.github.io/context#Student",
       "@context": {
         "@version": 1.1,
         "@protected": true,
-
         "studentId": "http://schema.org/identifier",
         "externalId": "http://schema.org/email",
         "attachment": "http://schema.org/url"
       }
     },
-
     "SkillCredential": {
       "@id": "https://keichiri.github.io/context#SkillCredential",
       "@context": {
         "@version": 1.1,
         "@protected": true,
-
         "id": "@id",
         "type": "@type",
-
         "description": "http://schema.org/description",
-        "image": {"@id": "http://schema.org/image", "@type": "@id"}
+        "image": {
+          "@id": "http://schema.org/image",
+          "@type": "@id"
+        }
       }
     },
-
     "Skill": {
       "@id": "https://keichiri.github.io/context#Skill",
       "@context": {
@@ -61,7 +59,6 @@
         "name": "http://schema.org/name"
       }
     },
-
     "BadgeCredential": {
       "@id": "https://keichiri.github.io/context#BadgeCredential",
       "@context": {
@@ -69,12 +66,24 @@
         "@protected": true,
         "id": "@id",
         "type": "@type",
-
         "description": "http://schema.org/description",
-        "image": {"@id": "http://schema.org/image", "@type": "@id"}
+        "image": {
+          "@id": "http://schema.org/image",
+          "@type": "@id"
+        }
       }
     },
-
+    "BadgeType": {
+      "@id": "https://keichiri.github.io/context#BadgeType",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "badgeTypeId": "http://schema.org/identifier",
+        "badgeTypeName": "http://schema.org/name"
+      }
+    },
     "Badge": {
       "@id": "https://keichiri.github.io/context#Badge",
       "@context": {
@@ -82,12 +91,14 @@
         "@protected": true,
         "id": "@id",
         "type": "@type",
+        "pocket" : "https://keichiri.github.io/context",
+
         "badgeId": "http://schema.org/identifier",
+        "badgeType": {"@id": "pocket:badgeType", "@type": "@id", "@container": "@graph"},
         "name": "http://schema.org/name",
         "awardDate": "http://schema.org/dateCreated"
       }
     },
-
     "Person": "http://schema.org/Person"
   }
 }
