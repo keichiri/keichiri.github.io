@@ -17,9 +17,10 @@
         "@protected": true,
         "id": "@id",
         "type": "@type",
+        "name": "http://schema.org/name",
         "description": "http://schema.org/description",
         "image": {
-          "@id": "http://schema.org/sha256",
+          "@id": "http://schema.org/image",
           "@type": "@id"
         }
       }
@@ -91,10 +92,13 @@
         "@protected": true,
         "id": "@id",
         "type": "@type",
-        "pocket" : "https://keichiri.github.io/context",
-
+        "pocket": "https://keichiri.github.io/context",
         "badgeId": "http://schema.org/identifier",
-        "badgeType": {"@id": "pocket:badgeType", "@type": "@id", "@container": "@graph"},
+        "badgeType": {
+          "@id": "pocket:badgeType",
+          "@type": "@id",
+          "@container": "@graph"
+        },
         "name": "http://schema.org/name",
         "awardDate": "http://schema.org/dateCreated"
       }
